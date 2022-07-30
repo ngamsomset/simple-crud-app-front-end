@@ -65,7 +65,7 @@ function App() {
     Axios.delete(`https://simple-crud-app-heroku.herokuapp.com/delete/${id}`).then((response) => {
       setEmployeeList(
         employeeList.filter((val) => {
-          return val.id != id;
+          return val.id !== id;
         })
       );
     });
